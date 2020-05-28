@@ -1,0 +1,47 @@
+schema {
+  query: RootQuery
+  mutation: RootMutation
+}
+
+type RootQuery {
+    frog(id: ID): Frog
+    frogs: [Frog]
+    food(id: ID): Food
+    foods: [Food]
+}
+
+type RootMutation {
+  addFrog(input: FrogInput!): Frog
+  updateFrog(id: ID!, input: FrogInput!): Frog
+  removeFrog(id: ID!): Frog
+ }
+
+type Frog {
+    id: ID
+    name: String
+    latinName: String
+    description: String
+    gender: Int
+    foods: [Food]
+}
+
+type Food {
+    id: ID
+    name: String
+    latinName: String
+    nutrion: String
+}
+
+input FrogInput {
+    name: String
+    latinName: String
+    description: String
+    gender: Int
+    foods: [FoodInput]
+}
+
+input FoodInput {
+    name: String
+    latinName: String
+    nutrion: String
+}

@@ -1,0 +1,20 @@
+INSERT INTO FROGS (FROG_ID, NAME, LATIN_NAME, DESCRIPTION, GENDER) VALUES (1,'Max', 'Dendrobates tinctorius (Azureus)', 'BLÅ', 1);
+INSERT INTO FROGS (FROG_ID, NAME, LATIN_NAME, DESCRIPTION, GENDER) VALUES (2,'Maxilla', 'Dendrobates tinctorius (Azureus)', 'BLÅ', 0);
+INSERT INTO FROGS (FROG_ID, NAME, LATIN_NAME, DESCRIPTION, GENDER) VALUES (3,'Lars', 'Dendrobates tinctorius (Azureus)', 'BLÅ', 1);
+INSERT INTO FROGS (FROG_ID, NAME, LATIN_NAME, DESCRIPTION, GENDER) VALUES (4,'Vilgot', 'Dendrobates tinctorius (Citronella)', 'BLÅ', 1);
+INSERT INTO FROGS (FROG_ID, NAME, LATIN_NAME, DESCRIPTION, GENDER) VALUES (5,'Ebba', 'Dendrobates tinctorius (Citronella)', 'BLÅ', 0);
+INSERT INTO FROGS (FROG_ID, NAME, LATIN_NAME, DESCRIPTION, GENDER) VALUES (6,'Mmmm', 'Dendrobates tinctorius (Azureus)', 'BLÅ', 2);
+INSERT INTO FROGS (FROG_ID, NAME, LATIN_NAME, DESCRIPTION, GENDER) VALUES (7,'Mmmmm2', 'Dendrobates tinctorius (Azureus)', 'BLÅ', 2);
+
+
+INSERT INTO FOODS(FOOD_ID, NAME, LATIN_NAME, DESCRIPTION, NUTRION) VALUES (1,'Small fruit fly','Drosophila melanogaster','Little fly', 'Yeah');
+INSERT INTO FOODS(FOOD_ID,NAME, LATIN_NAME, DESCRIPTION, NUTRION) VALUES (2,'Large fruit fly','Drosophila hydei','The larger flies', 'Yeah');
+INSERT INTO FOODS(FOOD_ID,NAME, LATIN_NAME, DESCRIPTION, NUTRION) VALUES (3,'Springtail','Collembola','Small white things', 'A bit like a snack');
+INSERT INTO FOODS(FOOD_ID,NAME, LATIN_NAME, DESCRIPTION, NUTRION) VALUES (4,'Isopod','Isopda','The things under rocks in the back garden', 'Ok');
+
+INSERT INTO FROG_FOODS (FROG_ID, FOOD_ID) VALUES (1,1)
+INSERT INTO FROG_FOODS (FROG_ID, FOOD_ID) VALUES (1,2)
+INSERT INTO FROG_FOODS (FROG_ID, FOOD_ID) VALUES (2,1)
+INSERT INTO FROG_FOODS (FROG_ID, FOOD_ID) VALUES (2,3)
+INSERT INTO FROG_FOODS (FROG_ID, FOOD_ID) VALUES (5,3)
+INSERT INTO FROG_FOODS (FROG_ID, FOOD_ID) VALUES (5,1)
